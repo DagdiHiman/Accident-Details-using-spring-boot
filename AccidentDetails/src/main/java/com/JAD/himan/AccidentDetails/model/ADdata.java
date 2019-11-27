@@ -1,0 +1,203 @@
+package com.JAD.himan.AccidentDetails.model;
+
+public class ADdata {
+	
+	private String States_UTs;
+	private int Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 ;
+	private int Total_Number_of_Persons_Injured_in_Road_Accidents_during_2015;
+	private int Total_Number_of_Persons_Injured_in_Road_Accidents_during_2016;
+	private int Total_Number_of_Persons_Injured_in_Road_Accidents_during_2017;
+	private int UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014;
+	private int UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015;
+	private int UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016;
+	private int UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017;
+	private int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014;
+	private int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015;
+	private int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016;
+	private int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017;
+	private int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014;
+	private int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015;
+	private int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016;
+	private int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014;
+	private int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015;
+	private int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016;
+	
+	public ADdata(){
+		super();
+	}
+	
+	public ADdata(String states_UTs, int total_Number_of_Persons_Injured_in_Road_Accidents_during_2014,
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2015,
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2016,
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2017,
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014,
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015,
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016,
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017,
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014,
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015,
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016,
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017,
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014,
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015,
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016,
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014,
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015,
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016) {
+		super();
+		States_UTs = states_UTs;
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2014;
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2015 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2015;
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2016 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2016;
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2017 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2017;
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014;
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015;
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016;
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017;
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014;
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015;
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016;
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017;
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014 = of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014;
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015 = of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015;
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016 = of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016;
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014 = of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014;
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015 = of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015;
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016 = of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016;
+	}
+
+	public String getStates_UTs() {
+		return States_UTs;
+	}
+	public void setStates_UTs(String states_UTs) {
+		States_UTs = states_UTs;
+	}
+	public int getTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2014() {
+		return Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014;
+	}
+	public void setTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2014(
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2014) {
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2014;
+	}
+	public int getTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2015() {
+		return Total_Number_of_Persons_Injured_in_Road_Accidents_during_2015;
+	}
+	public void setTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2015(
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2015) {
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2015 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2015;
+	}
+	public int getTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2016() {
+		return Total_Number_of_Persons_Injured_in_Road_Accidents_during_2016;
+	}
+	public void setTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2016(
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2016) {
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2016 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2016;
+	}
+	public int getTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2017() {
+		return Total_Number_of_Persons_Injured_in_Road_Accidents_during_2017;
+	}
+	public void setTotal_Number_of_Persons_Injured_in_Road_Accidents_during_2017(
+			int total_Number_of_Persons_Injured_in_Road_Accidents_during_2017) {
+		Total_Number_of_Persons_Injured_in_Road_Accidents_during_2017 = total_Number_of_Persons_Injured_in_Road_Accidents_during_2017;
+	}
+	public int getUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014() {
+		return UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014;
+	}
+	public void setUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014(
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014) {
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2014;
+	}
+	public int getUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015() {
+		return UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015;
+	}
+	public void setUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015(
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015) {
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2015;
+	}
+	public int getUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016() {
+		return UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016;
+	}
+	public void setUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016(
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016) {
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2016;
+	}
+	public int getUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017() {
+		return UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017;
+	}
+	public void setUTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017(
+			int uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017) {
+		UTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017 = uTs_in_Total_Number_of_Persons_Injured_in_Road_Accidents_2017;
+	}
+	public int getOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014() {
+		return of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014;
+	}
+	public void setOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014(
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014) {
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2014;
+	}
+	public int getOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015() {
+		return of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015;
+	}
+	public void setOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015(
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015) {
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2015;
+	}
+	public int getOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016() {
+		return of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016;
+	}
+	public void setOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016(
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016) {
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2016;
+	}
+	public int getOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017() {
+		return of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017;
+	}
+	public void setOf_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017(
+			int of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017) {
+		this.of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017 = of_Persons_Injured_in_Road_Accidents_Per_Lakh_Population_2017;
+	}
+	public int getOf_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014() {
+		return of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014;
+	}
+	public void setOf_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014(
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014) {
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014 = of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2014;
+	}
+	public int getOf_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015() {
+		return of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015;
+	}
+	public void setOf_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015(
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015) {
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015 = of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2015;
+	}
+	public int getOf_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016() {
+		return of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016;
+	}
+	public void setOf_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016(
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016) {
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016 = of_Persons_injured_in_Road_Accidents_per_10_000_Vehicles_2016;
+	}
+	public int getOf_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014() {
+		return of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014;
+	}
+	public void setOf_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014(
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014) {
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014 = of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014;
+	}
+	public int getOf_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015() {
+		return of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015;
+	}
+	public void setOf_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015(
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015) {
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015 = of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2015;
+	}
+	public int getOf_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016() {
+		return of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016;
+	}
+	public void setOf_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016(
+			int of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016) {
+		this.of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016 = of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2016;
+	}
+	
+	
+}
