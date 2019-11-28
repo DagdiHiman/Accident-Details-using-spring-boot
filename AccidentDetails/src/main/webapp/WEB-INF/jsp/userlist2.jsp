@@ -8,7 +8,7 @@
 <%@ page import="com.google.gson.JsonObject"%>
  
  <%
-	String driver = "com.mysql.jdbc.Driver";
+	String driver = "com.mysql.cj.jdbc.Driver";
 	String connectionUrl = "jdbc:mysql://localhost:3306/accidents?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	
 	String userid = "root";
