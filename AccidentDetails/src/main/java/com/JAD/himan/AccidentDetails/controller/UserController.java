@@ -47,5 +47,10 @@ public class UserController {
 		model.put("accident",userRepository.ADdataList());
 		return "userlist";
 	}*/	
+	
+	@RequestMapping(value="/userlist2", method= RequestMethod.GET )
+	public String showData(ModelMap model) {
+		return "userlist2";
+	}
 
 }
