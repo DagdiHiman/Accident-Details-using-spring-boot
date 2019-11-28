@@ -32,19 +32,20 @@ public class UserController {
 	  * 
 	  * @return username list
 	  */
-/*	 @GetMapping(path = "/getusernames")
+//	 @GetMapping(path = "/getusernames")
 	@RequestMapping(value="/userlist", method= RequestMethod.GET )
 	 public String getAllUserNames(ModelMap model) {
 	  model.put("listusers",userRepository.getAllUserNames());
 	  model.put("listAD2014", userRepository.getAccidents2014());
 	  return "userlist";
-	 }*/
+	 }
 	
+	/*
 	@RequestMapping(value="/userlist", method= RequestMethod.GET )
 	public String getAllData(ModelMap model) {
 		
 		model.put("accident",userRepository.ADdataList());
 		return "userlist";
-	}	
+	}*/	
 
 }

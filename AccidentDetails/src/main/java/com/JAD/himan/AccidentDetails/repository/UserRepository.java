@@ -2,7 +2,6 @@ package com.JAD.himan.AccidentDetails.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +38,7 @@ public class UserRepository {
 	  return list;
 	 }
 
+ /*
  public List<ADdata> ADdataList() {
  		List<ADdata> list = jdbcTemplate.query("SELECT * FROM accidents", new RowMapper<ADdata>() {
 
@@ -55,6 +55,8 @@ public class UserRepository {
 
  		return list;
  	}
- 		
+ */	
 
 }
+
+//////////////////
