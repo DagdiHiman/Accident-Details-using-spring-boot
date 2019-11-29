@@ -6,7 +6,7 @@
 	<body>
 			<div class="container">
 				<br></br>
-	       		<h2>Welcome to Java Project <a href="userlist">click here</a> to start !</h2>
+	       		<h2>Welcome to Java Project <a href="userlist2">click here</a> to start !</h2>
 	       		
 	       		
 	       		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>

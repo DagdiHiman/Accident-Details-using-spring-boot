@@ -28,13 +28,13 @@
 		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 		</li>
 		<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-		<a class="nav-link" href="userlist">Accident Details</a>
+		<a class="nav-link" href="userlist2">Accident Details</a>
 		</li>
 		<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 		<a class="nav-link" href="#">About</a>
 		</li>
 		<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-		<a class="nav-link" href="#">Contact Us</a>
+		<a class="nav-link" href="#">Give marks to Us</a>
 		</li>
 		<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Extra</a>
