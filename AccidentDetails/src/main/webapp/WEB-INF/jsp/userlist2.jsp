@@ -20,21 +20,33 @@
 	}
 	Connection con = DriverManager.getConnection(connectionUrl, userid, password);
 	Statement stmt = con.createStatement();
-	ResultSet rs = stmt.executeQuery("select * from accidents");
+	ResultSet rs = stmt.executeQuery("select Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 from accidents");
+	ArrayList<String> ar1 = new ArrayList<String>();
+	ArrayList<Integer> ar = new ArrayList<Integer>();
 	while(rs.next()) {
-		%><h1><%= rs.getString(1)%></h1><%
+		int n = rs.getInt(1);
+		ar.add(n);
+		%><h4></h4><%
+	} 
+	ResultSet rs1 = stmt.executeQuery("select States_UTs from accidents");
+	while(rs1.next()){
+		String str = rs1.getString(1);
+		ar1.add(str);
+		%><h4></h4><%
 	}
 	
 Gson gsonObj = new Gson();
 Map<Object,Object> map = null;
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
- 
-map = new HashMap<Object,Object>(); map.put("label", "Work"); map.put("y", 44); list.add(map);
-map = new HashMap<Object,Object>(); map.put("label", "Gym"); map.put("y", 9); list.add(map);
-map = new HashMap<Object,Object>(); map.put("label", "Leisure"); map.put("y", 8); list.add(map);
-map = new HashMap<Object,Object>(); map.put("label", "Routines"); map.put("y", 8); list.add(map);
-map = new HashMap<Object,Object>(); map.put("label", "Nap"); map.put("y", 2); list.add(map);
-map = new HashMap<Object,Object>(); map.put("label", "Sleep"); map.put("y", 29); list.add(map);
+for(int i=0; i<ar.size()-1; i++){ 
+	map = new HashMap<Object,Object>(); map.put("label", ar1.get(i)); map.put("y", ar.get(i)); list.add(map);
+}
+//map = new HashMap<Object,Object>(); map.put("label", str); map.put("y", 44); list.add(map);
+//map = new HashMap<Object,Object>(); map.put("label", "Gym"); map.put("y", 9); list.add(map);
+//map = new HashMap<Object,Object>(); map.put("label", "Leisure"); map.put("y", 8); list.add(map);
+//map = new HashMap<Object,Object>(); map.put("label", "Routines"); map.put("y", 8); list.add(map);
+//map = new HashMap<Object,Object>(); map.put("label", "Nap"); map.put("y", 2); list.add(map);
+//map = new HashMap<Object,Object>(); map.put("label", "Sleep"); map.put("y", 29); list.add(map);
  
 String dataPoints = gsonObj.toJson(list);
 %>
@@ -55,9 +67,9 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	data: [{
 		type: "pie",
-		toolTipContent: "<b>{label}</b>: {y}%",
+		toolTipContent: "<b>{label}</b>: {y}",
 		indexLabelFontSize: 16,
-		indexLabel: "{label} - {y}%",
+		indexLabel: "{label} - {y}",
 		dataPoints: <%out.print(dataPoints);%>
 	}]
 });
