@@ -59,11 +59,11 @@ String dataPoints = gsonObj.toJson(list);
 window.onload = function() { 
  
 var chart = new CanvasJS.Chart("chartContainer", {
-	theme: "light2", // "light1", "dark1", "dark2"
+	theme: "dark1", // "light1", "dark1", "dark2"
 	exportEnabled: true,
 	animationEnabled: true,
 	title: {
-		text: "Typical Day"
+		text: "Total Number of People Injured in Road Accidents during 2014"
 	},
 	data: [{
 		type: "pie",
