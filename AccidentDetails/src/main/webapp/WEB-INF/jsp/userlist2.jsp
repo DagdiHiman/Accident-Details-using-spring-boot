@@ -20,7 +20,7 @@
 	}
 	Connection con = DriverManager.getConnection(connectionUrl, userid, password);
 	Statement stmt = con.createStatement();
-	ResultSet rs = stmt.executeQuery("select Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 from accidents");
+	ResultSet rs = stmt.executeQuery("select Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 from accidents order by Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 DESC");
 	ArrayList<String> ar1 = new ArrayList<String>();
 	ArrayList<Integer> ar = new ArrayList<Integer>();
 	while(rs.next()) {
@@ -38,7 +38,7 @@
 Gson gsonObj = new Gson();
 Map<Object,Object> map = null;
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-for(int i=0; i<ar.size()-1; i++){ 
+for(int i=1; i<ar.size(); i++){ 
 	map = new HashMap<Object,Object>(); map.put("label", ar1.get(i)); map.put("y", ar.get(i)); list.add(map);
 }
 //map = new HashMap<Object,Object>(); map.put("label", str); map.put("y", 44); list.add(map);
