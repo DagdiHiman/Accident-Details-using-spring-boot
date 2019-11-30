@@ -11,4 +11,10 @@ class HomepageController{
 	public String showLoginMessage() {
 		return "homepage";
 	}
+	
+	@RequestMapping(value="/contactus", method= RequestMethod.GET )
+	public String showData() {
+		return "contactus";
+	}
+
 }

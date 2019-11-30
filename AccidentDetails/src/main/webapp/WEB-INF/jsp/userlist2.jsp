@@ -66,10 +66,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		text: "Total Number of People Injured in Road Accidents during 2014"
 	},
 	data: [{
-		type: "pie",
+		type: "area",
 		toolTipContent: "<b>{label}</b>: {y}",
 		indexLabelFontSize: 16,
-		indexLabel: "{label} - {y}",
+		//indexLabel: "{label} - {y}",
 		dataPoints: <%out.print(dataPoints);%>
 	}]
 });

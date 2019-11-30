@@ -43,5 +43,6 @@ public class UserController {
 	public String showData(ModelMap model) {
 		return "userlist2";
 	}
+	
 
 }
