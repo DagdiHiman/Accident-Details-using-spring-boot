@@ -13,8 +13,12 @@ class HomepageController{
 	}
 	
 	@RequestMapping(value="/contactus", method= RequestMethod.GET )
-	public String showData() {
+	public String showContactus() {
 		return "contactus";
 	}
-
+	
+	@RequestMapping(value="/admain", method= RequestMethod.GET )
+	public String showadMain() {
+		return "admain";
+	}
 }
