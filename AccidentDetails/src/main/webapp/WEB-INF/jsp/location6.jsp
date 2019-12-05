@@ -20,7 +20,7 @@
 	}
 	Connection con = DriverManager.getConnection(connectionUrl, userid, password);
 	Statement stmt = con.createStatement();
-	ResultSet rs = stmt.executeQuery("select Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 from accidents order by Total_Number_of_Persons_Injured_in_Road_Accidents_during_2014 DESC");
+	ResultSet rs = stmt.executeQuery("select of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014 from accidents order by of_Persons_injured_in_Road_Accidents_per_10_000_Km_of_Roads_2014 DESC");
 	ArrayList<String> ar1 = new ArrayList<String>();
 	ArrayList<Integer> ar = new ArrayList<Integer>();
 	while(rs.next()) {
@@ -57,10 +57,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	exportEnabled: true,
 	animationEnabled: true,
 	title: {
-		text: "Total Number of People Injured in Road Accidents during 2014"
+		text: "Persons injured in Road Accidents per 10,000 Km of Roads 2014"
 	},
 	data: [{
-		type: "area",
+		type: "doughnut",
 		toolTipContent: "<b>{label}</b>: {y}",
 		indexLabelFontSize: 16,
 		//indexLabel: "{label} - {y}",

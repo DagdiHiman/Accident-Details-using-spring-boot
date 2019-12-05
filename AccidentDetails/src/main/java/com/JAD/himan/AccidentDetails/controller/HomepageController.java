@@ -21,4 +21,37 @@ class HomepageController{
 	public String showadMain() {
 		return "admain";
 	}
+	
+	@RequestMapping(value="/location2", method= RequestMethod.GET )
+	public String showadLocation2() {
+		return "location2";
+	}
+	
+	@RequestMapping(value="/location3", method= RequestMethod.GET )
+	public String showadLocation3() {
+		return "location3";
+	}
+	
+	@RequestMapping(value="/location4", method= RequestMethod.GET )
+	public String showadLocation4() {
+		return "location4";
+	}
+	@RequestMapping(value="/location5", method= RequestMethod.GET )
+	public String showadLocation5() {
+		return "location5";
+	}
+	@RequestMapping(value="/location6", method= RequestMethod.GET )
+	public String showadLocation6() {
+		return "location6";
+	}
+	@RequestMapping(value="/veh_no_acc", method= RequestMethod.GET )
+	public String showadVehicle1() {
+		return "veh_no_acc";
+	}@RequestMapping(value="/veh_per_inj", method= RequestMethod.GET )
+	public String showadVehicle2() {
+		return "veh_per_inj";
+	}@RequestMapping(value="/veh_per_killed", method= RequestMethod.GET )
+	public String showadVehicle3() {
+		return "veh_per_killed";
+	}
 }
