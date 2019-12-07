@@ -56,6 +56,8 @@
       </div>
     </div>
   </div>
+  
+  
   <div class='card col-md-4 '>
     <div class='card-title'>
       <h2>
@@ -90,6 +92,44 @@
       </div>
     </div>
   </div>
+  
+    <div class='card col-md-4 '>
+    <div class='card-title'>
+      <h2>
+        Based on Time
+        <small>Type 3</small>
+      </h2>
+      <div class='task-count'>
+        3
+      </div>
+    </div>
+    <div class='card-flap flap1'>
+      <div class='card-description'>
+        <ul class='task-list'>
+          <li>
+            <a href="timeYear1" target="_blank">Total Number of People Injured in Road Accidents during 2014</a>
+            <span>States wise</span>
+          </li>
+          <li>
+            <a href="timeYear2" target="_blank">Total Number of People Injured in Road Accidents during 2015</a>
+            <span>States wise</span>
+          </li>
+          <li>
+            <a href="timeYear3" target="_blank">Total Number of Persons Injured in Road Accidents 2014</a>
+            <span>UTs wise</span>
+          </li>
+          
+        </ul>
+      </div>
+      <div class='card-flap flap2'>
+        <div class='card-actions'>
+          <a class='btn' href='#'>Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>

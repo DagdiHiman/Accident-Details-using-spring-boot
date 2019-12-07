@@ -13,7 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AccidentDetails</name>
 	<description>Accident Details project using Spring Boot For Java Project</description>
-
+	<!-- define the packaging type -->
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

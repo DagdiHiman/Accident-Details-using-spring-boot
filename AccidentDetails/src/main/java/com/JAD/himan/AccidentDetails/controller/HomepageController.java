@@ -54,4 +54,16 @@ class HomepageController{
 	public String showadVehicle3() {
 		return "veh_per_killed";
 	}
+	@RequestMapping(value="/timeYear1", method= RequestMethod.GET )
+	public String timeYear1() {
+		return "timeYear1";
+	}
+	@RequestMapping(value="/timeYear2", method= RequestMethod.GET )
+	public String timeYear2() {
+		return "timeYear2";
+	}
+	@RequestMapping(value="/timeYear3", method= RequestMethod.GET )
+	public String timeYear3() {
+		return "timeYear3";
+	}
 }
