@@ -28,19 +28,14 @@
 		y.add(rs.getInt(2));
 	}
 	
+// Gson object to plot CanjasJS files
+
 Gson gsonObj = new Gson();
 Map<Object,Object> map = null;
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
 for(int i=1; i < y.size(); i++){ 
 	map = new HashMap<Object,Object>(); map.put("label", x.get(i)); map.put("y", y.get(i)); list.add(map);
 }
-//map = new HashMap<Object,Object>(); map.put("label", str); map.put("y", 44); list.add(map);
-//map = new HashMap<Object,Object>(); map.put("label", "Gym"); map.put("y", 9); list.add(map);
-//map = new HashMap<Object,Object>(); map.put("label", "Leisure"); map.put("y", 8); list.add(map);
-//map = new HashMap<Object,Object>(); map.put("label", "Routines"); map.put("y", 8); list.add(map);
-//map = new HashMap<Object,Object>(); map.put("label", "Nap"); map.put("y", 2); list.add(map);
-//map = new HashMap<Object,Object>(); map.put("label", "Sleep"); map.put("y", 29); list.add(map);
- 
 String dataPoints = gsonObj.toJson(list);
 %>
  
