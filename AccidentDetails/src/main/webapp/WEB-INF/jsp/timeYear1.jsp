@@ -20,6 +20,9 @@
 	}
 	Connection con = DriverManager.getConnection(connectionUrl, userid, password);
 	Statement stmt = con.createStatement();
+	
+	// Retrieval of data from the Database
+	
 	ResultSet rs = stmt.executeQuery("SELECT Years, Total_Number_of_Road_Accidents_in_numbers FROM road_accidents_2017_annexure_tables_1 order by Years ASC");
 	ArrayList<Integer> x = new ArrayList<Integer>();
 	ArrayList<Integer> y = new ArrayList<Integer>();
@@ -34,6 +37,7 @@ Gson gsonObj = new Gson();
 Map<Object,Object> map = null;
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
 for(int i=1; i < y.size(); i++){ 
+	// map each of the x-axis with it's corresponding y-axis
 	map = new HashMap<Object,Object>(); map.put("label", x.get(i)); map.put("y", y.get(i)); list.add(map);
 }
 String dataPoints = gsonObj.toJson(list);
@@ -45,7 +49,9 @@ String dataPoints = gsonObj.toJson(list);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript">
 window.onload = function() {
- 
+
+// CanvasJS graph plotting using the retreived Data
+	
 var chart = new CanvasJS.Chart("chartContainer", {
 	theme: "dark1", // "light1", "dark1", "dark2"
 	exportEnabled: true,
