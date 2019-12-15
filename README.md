@@ -1,5 +1,13 @@
 # Accident Details Project
 > Made using spring boot
+## Functional Requirements
+1. Spring Tool Suite or Eclipse IDE 
+2. The latest version of the Java Development Kit
+3. SOAPUI 
+4. Cloud Foundry 
+5. XAMPP
+6. CanvasJS
+
 ## Screenshots:
 ![](Screenshots_Accident_Details/Screenshot%20(230).png)
 ![](Screenshots_Accident_Details/Screenshot%20(231).png)
